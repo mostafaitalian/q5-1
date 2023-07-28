@@ -1,0 +1,139 @@
+
+.nav-cont-sub{
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    transition: 0.5 top;
+
+}
+
+.nav-sub-first{
+
+    line-height: 40px;
+    height: 40px;
+}
+
+.nav-sub-header{
+    background-image: url(https://bitnine.net/wp-content/uploads/2022/07/AGC_banner_back.jpg) !important;
+    /* background-size: 100%; */
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 0px;
+    top: 0px;
+    visibility: visible;
+    transition: 0.5s height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#nav-sub-h a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+}
+#nav-sub-h a:hover{
+    color: #fac433;
+}
+
+.show-nav{
+    height: 40px !important;
+}
+
+
+.nav-sub-second{
+    line-height: 90px;
+    height: 90px;
+    padding: 0px 25px;
+}
+
+
+
+.main-icon, .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: inherit !important;
+}
+.nav-list{
+    float: right;
+}
+.main-icon{
+    float: left;
+    width: 25vw !important;
+}
+
+.main-img-cont{
+    /* align-items: flex-start; */
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.main-img-header:active{
+    color: #fac433 !important;
+}
+.main-img-header img.for_default{
+    width: 18vw;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.w-nav-list{
+    margin-bottom: 0px;
+}
+
+
+.w-nav-list li{
+    font-family: "Monda", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    transition: 0.3s all;
+}
+
+.w-nav-list li a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.w-nav-list li:active{
+    color: #fac433;
+}
+
+.w-nav-list li:hover{
+    color: #fac433;
+}
+
+.w-nav-list.level_1 li{
+    display: inline-block;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    list-style: none;
+
+}
+/* .w-nav-list.level_1 li a{
+    padding: 0 12.5px;
+
+} */
+
+.btn-try-link a span.w-nav-title{
+    background-color: #022EA9;
+    border-radius: 0.225rem;
+    padding: 1rem 1rem;
+    color: #fff;
+    transition: 0.3s all step-end;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Monda", sans-serif;
+    font-weight: 400;
+}
+
+.btn-try-link a span.w-nav-title:hover{
+    color: #fac433;
+
+}

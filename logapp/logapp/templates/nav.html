@@ -1,0 +1,111 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.nav.css' %}">
+
+
+<div class="container-fluid">
+        <div class="row">
+            <nav id="nav-sub-h" class="nav-sub-header">
+                <a href="http://agcloud.bitnine.net/" target="_blank" class="top_b">
+                    <b>AG Cloud Express : </b>
+                    Experience graph database in a cloud environment for FREE!
+                </a>
+            </nav>
+            <nav id="fs-b" class="nav-cont-sub">
+
+                
+                    <nav class="nav-sub-first">
+
+                        <div class="second-footer-section">
+                            <!-- <div class="trade-mark">
+                                <i class="fa fa-copyright" aria-hidden="true"></i>
+                                2023 by Bitnine Global Inc. All Rights Reserved.
+                            </div> -->
+                            <div class="logo-cont">
+                                <ul class="logos-list">
+                                    <li><a href=""><i class="fa-brands fa-github" style="color: #514b1f;"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-youtube" style="color: #5d5e5f;"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin-in" style="color: #5d5e5f;"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-facebook" style="color: #5d5e5f;"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-blog" style="color: #5d5e5f;"></i></a></li>
+                            
+                                </ul>
+                            </div>
+                            
+                        </div>
+    
+                    </nav>
+                    <nav class="nav-sub-second">
+                        <div class="main-icon">
+                            <div class="main-img-cont">
+                                <a class="main-img-header" href="http://localhost:8000/">
+                                    <img class="for_default" src="https://bitnine.net/wp-content/uploads/2021/02/b_logo.png"  alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-list">
+                            <ul class="w-nav-list level_1 hover_simple">
+    
+    
+                                <li {% if 'home' in request.path %} active {% endif %} class="menu-item menu">
+                                    <a class="w-nav-anchor" href="http://localhost:8000/home/">
+                                    <span class="w-nav-title">PRODUCTS</span>
+                                    <span class="w-nav-arrow"></span>
+                                </a>
+                                <ul class="w-nav-list level_2" style="display: none; opacity: 0;">
+                                    <li id="menu-item-14324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children w-nav-item level_2 menu-item-14324 togglable"><a class="w-nav-anchor level_2" href="https://bitnine.net/graph-database/"><span class="w-nav-title">Graph Database</span><span class="w-nav-arrow"></span></a>
+                                    <ul class="w-nav-list level_3" style="display: none;">
+                                        <li id="menu-item-12782" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_3 menu-item-12782"><a class="w-nav-anchor level_3" href="https://bitnine.net/agensgraph/"><span class="w-nav-title">AgensGraph</span><span class="w-nav-arrow"></span></a>		</li>
+                                        <li id="menu-item-20655" class="menu-item menu-item-type-custom menu-item-object-custom w-nav-item level_3 menu-item-20655"><a class="w-nav-anchor level_3" href="https://age.apache.org/"><span class="w-nav-title">Apache AGE</span><span class="w-nav-arrow"></span></a>		</li>
+                                        <li id="menu-item-19886" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_3 menu-item-19886"><a class="w-nav-anchor level_3" href="https://bitnine.net/ag-cloud/"><span class="w-nav-title">AG Cloud</span><span class="w-nav-arrow"></span></a>		</li>
+                                        <li id="menu-item-14323" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_3 menu-item-14323"><a class="w-nav-anchor level_3" href="https://bitnine.net/agensbrowser/"><span class="w-nav-title">Visualization &amp; Analytics</span><span class="w-nav-arrow"></span></a>		</li>
+                                    </ul>
+                                    </li>
+                                    <li id="menu-item-20597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-20546 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children w-nav-item level_2 menu-item-20597 togglable"><a class="w-nav-anchor level_2" href="https://bitnine.net/"><span class="w-nav-title">Relational Database</span><span class="w-nav-arrow"></span></a>
+                                    <ul class="w-nav-list level_3" style="display: none;">
+                                        <li id="menu-item-20598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-20546 current_page_item w-nav-item level_3 menu-item-20598"><a class="w-nav-anchor level_3" href="https://bitnine.net/"><span class="w-nav-title">AgensSQL</span><span class="w-nav-arrow"></span></a>		</li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                                </li>
+                                <li id="menu-item-21129" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_1 menu-item-21129"><a class="w-nav-anchor level_1" href="https://bitnine.net/graph-database-use-case/"><span class="w-nav-title">USE CASES</span><span class="w-nav-arrow"></span></a></li>
+                                <li id="menu-item-12453" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_1 menu-item-12453"><a class="w-nav-anchor level_1" href="https://bitnine.net/services/"><span class="w-nav-title">SERVICES</span><span class="w-nav-arrow"></span></a></li>
+                                <li id="menu-item-14436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children w-nav-item level_1 menu-item-14436 togglable"><a class="w-nav-anchor level_1" href="https://bitnine.net/documentation/"><span class="w-nav-title">RESOURCES</span><span class="w-nav-arrow"></span></a>
+                                <ul class="w-nav-list level_2" style="display: none; opacity: 0;">
+                                    <li id="menu-item-12459" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-12459"><a class="w-nav-anchor level_2" href="https://bitnine.net/documentation/"><span class="w-nav-title">Documentation</span><span class="w-nav-arrow"></span></a>	</li>
+                                    <li id="menu-item-13700" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-13700"><a class="w-nav-anchor level_2" href="https://bitnine.net/learn/"><span class="w-nav-title">Learn</span><span class="w-nav-arrow"></span></a>	</li>
+                                </ul>
+                                </li>
+                                <li id="menu-item-19219" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_1 menu-item-19219"><a class="w-nav-anchor level_1" href="https://bitnine.net/blog/"><span class="w-nav-title">BLOG</span><span class="w-nav-arrow"></span></a></li>
+                                <li id="menu-item-12387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children w-nav-item level_1 menu-item-12387 togglable"><a class="w-nav-anchor level_1" href="https://bitnine.net/company/"><span class="w-nav-title">COMPANY</span><span class="w-nav-arrow"></span></a>
+                                <ul class="w-nav-list level_2" style="display: none;">
+                                    <li id="menu-item-14325" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-14325"><a class="w-nav-anchor level_2" href="https://bitnine.net/company/"><span class="w-nav-title">About Us</span><span class="w-nav-arrow"></span></a>	</li>
+                                    <li id="menu-item-19221" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-19221"><a class="w-nav-anchor level_2" href="https://bitnine.net/contact/"><span class="w-nav-title">Contact</span><span class="w-nav-arrow"></span></a>	</li>
+                                </ul>
+                                </li>
+                                <li id="menu-item-20610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children w-nav-item level_1 menu-item-20610 togglable"><a class="w-nav-anchor level_1" href="https://bitnine.net/ir-announcement/"><span class="w-nav-title">IR</span><span class="w-nav-arrow"></span></a>
+                                <ul class="w-nav-list level_2" style="display: none;">
+                                    <li id="menu-item-20611" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-20611"><a class="w-nav-anchor level_2" href="https://bitnine.net/ir-announcement/"><span class="w-nav-title">IR 공고</span><span class="w-nav-arrow"></span></a>	</li>
+                                    <li id="menu-item-20612" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-20612"><a class="w-nav-anchor level_2" href="https://bitnine.net/ir-info/"><span class="w-nav-title">IR 공시 정보</span><span class="w-nav-arrow"></span></a>	</li>
+                                    <li id="menu-item-20613" class="menu-item menu-item-type-post_type menu-item-object-page w-nav-item level_2 menu-item-20613"><a class="w-nav-anchor level_2" href="https://bitnine.net/ir-finance/"><span class="w-nav-title">IR 재무 정보</span><span class="w-nav-arrow"></span></a>	</li>
+                                </ul>
+                                </li>
+                                <li id="menu-item-18494" class="menu-item level_1 btn-try-link">
+                                    <a class="w-nav-anchor level_1" href="https://bitnine.net/agensgraph-downloads/">
+                                        <span class="w-nav-title">TRY FREE</span>
+                                        <span class="w-nav-arrow"></span>
+                                    </a>
+                                </li>
+                                </ul>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                    </nav>
+                
+
+
+            </nav>
+        </div>
+<script src="{% static 'js/navjs.js' %}"></script>
+</div>

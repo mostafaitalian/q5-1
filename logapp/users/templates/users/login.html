@@ -1,0 +1,60 @@
+{% extends "users/base.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block inner %}
+
+<h1>{% trans "Sign In" %}</h1>
+
+<p>{% blocktrans %}If you have not created an account yet, then please
+<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+
+<form id="login_formm" class="login" method="POST" action="{% url 'users:log_in_url' %}">
+  {% csrf_token %}
+  {{ form|crispy }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button class="primaryAction btn btn-primary" type="submit">{% trans "Sign In" %}</button>
+</form>
+
+
+{% endblock %}
+{% block script %}
+
+<script type="text/javascript">
+  const devUrl = `http://127.0.0.1:8000/`
+  const proUrl = `http://www.digitecxerox.org/`
+  function getToken(data){
+  return fetch(`${devUrl}api/token/`, {
+      method: 'POST',
+      headers: {
+        Accept:"application/json",
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then(res => res.json()).catch(error=>console.log('error', error))
+  }
+  document.addEventListener("DOMContentLoaded",(e)=>{
+    
+    let loginForm = document.getElementById("login_formm")
+    console.log(loginForm)
+    loginForm.addEventListener('submit', async(event)=>{
+      // event.preventDefault();
+      // event.stopPropagation();
+      let usernameNode = document.getElementById('id_login')
+      let passwordNode = document.getElementById('id_password')
+      let token = await getToken({"username": usernameNode.value, "password": passwordNode.value})
+      // console.log(token)
+      localStorage.setItem("token", JSON.stringify(token.access))
+      // console.log(localStorage.getItem('token'))
+    })
+  })
+
+
+</script>
+
+{% endblock %}

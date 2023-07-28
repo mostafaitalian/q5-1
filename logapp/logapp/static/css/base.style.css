@@ -1,0 +1,494 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+  }
+  html {
+    scrollbar-width: auto !important;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+  }
+
+
+@font-face {
+	font-family: 'Chapbook';
+	src: url('../../static/fonts/Chapbook/Chapbook.eot');
+	src: local('Chapbook'), url('../../static/fonts/Chapbook/Chapbook.woff') format('woff'), url('../../static/fonts/Chapbook/Chapbook.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_80467">Text with this font applied</p> */
+.font-chabook {
+	font-family: 'Chapbook' !important;
+}
+
+body{
+    /* background-image: url("/static/images/print4.jpg") !important; */
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    margin:0px;
+    padding: 0px; width:100%;
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+} 
+.m {
+margin: 4px;
+}
+
+#sidebar {
+max-width: 150px;
+max-height: 100vh;
+position: fixed;
+top: 59px;
+left: 0;
+margin-left: 0px;
+margin-top: 0px;
+position: fixed;
+width: 100%;
+z-index: 200 !important;
+font-size: x-small;
+overflow-y: scroll;
+}
+
+#sidebar.active {
+margin-left: -250px;
+}
+
+li.nav-item {
+border-bottom: 1px solid pink;
+margin-right: 20px;
+text-align: center;
+color: black;
+flex-shrink: 0;
+}
+
+/* #sidebar.active {
+margin-left: -250px;
+} */
+
+@media (max-width: 750px) {
+li ul li a {
+font-size: small !important;
+padding-left: 10px !important;
+
+}
+
+li ul li {
+text-align: center;
+}
+/* 
+.nav-up-ul {
+    display: none !important;
+    flex-direction: column !important;
+
+} */
+#sub-info-sidebar {
+margin-left: 0px;
+margin-top: 0px;
+position: fixed;
+top: 59px;
+width: 100%;
+left: 0;
+z-index: 200 !important;
+font-size: x-small;
+overflow-y: scroll;
+}
+
+#sidebarCollapse {
+position: fixed;
+z-index: 10;
+top: 10px;
+right: 40% !important;
+background-color: white !important;
+
+/* left:5%;
+top: 50px; */
+}
+
+#sidebarCollapse:hover {
+color: black !important;
+background-color: #999;
+}
+
+#sidebar.active {
+margin-left: 0;
+}
+}
+
+
+.form-inline button {
+
+margin-bottom: 1.35rem !important;
+
+}
+
+.wrapper {
+display: flex;
+width: 100%;
+}
+
+.dropdown-toggle::after {
+display: block;
+position: absolute;
+top: 50%;
+right: 2px;
+transform: translateY(-50%);
+}
+
+.dropdown button:hover {
+color: black !important;
+}
+
+li.nav-item:hover {
+/* border-bottom: 1px solid black;
+margin-right: 2px;
+background-color: white !important;
+color: black;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+box-shadow: 3px 3px 2px -2px #DDDDDD; */
+color: red;
+background-color: white;
+}
+a.nav-link{
+    color: black;
+}
+a.nav-link:hover {
+/* margin-right: 20px; */
+color: rgb(65, 26, 26) !important;
+}
+
+a.navbar-brand {
+font-size: 26px;
+font-weight: bold;
+font-family: 'Chapbook';
+margin-right: 20px;
+}
+
+nav {
+/* background-color: red !important; */
+/* opacity: 80%; */
+position: relative;
+width: 100%;
+z-index: 10;
+
+/* margin-bottom: 100px; */
+}
+
+#sidebarCollapse {
+position: fixed;
+bottom: 1%;
+right: 1%;
+z-index: 300;
+}
+
+.nott {
+position: fixed;
+bottom: 8%;
+right: 1%;
+z-index: 300;
+}
+
+
+.navbar {
+position: relative;
+width: 100vw;
+top: 0;
+left: -15px;
+border-bottom: #555 1px solid;
+box-shadow: 1px 1px 2px 2px #555;
+opacity: 100 !important;
+background-color: whitesmoke;
+}
+
+div ul li a.nav-link {
+color:linear-gradient(#56d0df, #555) !important;
+}
+
+div {
+margin: 0px;
+}
+
+.btn-group .btn.btn-warning {
+height: 3.8rem !important;
+display: flex !important;
+flex-direction: column !important;
+align-content: center !important;
+justify-content: center !important;
+text-align: center !important;
+font-size: small;
+font-weight: bold;
+/* font-style: oblique; */
+}
+
+.col-12 .btn-group {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+}
+
+/*
+ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+font-family: 'Poppins', sans-serif;
+background: #fafafa;
+}
+
+p {
+font-family: 'Poppins', sans-serif;
+font-size: 1.1em;
+font-weight: 300;
+line-height: 1.7em;
+color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+color: inherit;
+text-decoration: none;
+transition: all 0.3s;
+}
+
+#sidebar {
+/* don't forget to add all the previously mentioned styles here too */
+/* background: #7386D5; */
+/* color: #fff; */
+color: linear-gradient(#56d0df, #999);
+transition: all 0.3s;
+background-color: white;
+border-top-right-radius: 3px;
+box-shadow: 1px 0px 7px 0px gray;
+}
+
+#sidebar .sidebar-header {
+padding: 20px;
+font-size: small;
+/* background: #6d7fcc; */
+}
+
+#sidebar ul.components {
+padding: 20px 0;
+border-bottom: 1px solid white;
+}
+
+#sidebar ul p {
+color: red;
+padding: 10px;
+font-family: 'Chapbook';
+
+}
+
+#sidebar ul li a {
+padding: 10px;
+font-size: 1.1em;
+display: block;
+font-family: 'Chapbook';
+
+}
+
+#sidebar ul li a:hover {
+/* color: #7386D5; */
+background: #fff;
+color: red;
+transform-style: preserve-3d;
+box-shadow: 1px 1px 20px lightgrey;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+color: #fff;
+background: gray;
+}
+
+ul ul a {
+font-size: 0.9em !important;
+padding-left: 30px !important;
+/* background: #6d7fcc; */
+}
+
+.notification {
+background-color: #555;
+color: white;
+text-decoration: none;
+padding: 15px 26px;
+position: relative;
+display: inline-block;
+border-radius: 2px;
+}
+
+.notification:hover {
+background: red;
+}
+
+.notification .badge {
+position: absolute;
+top: -10px;
+right: -10px;
+padding: 5px 10px;
+border-radius: 50%;
+background: red;
+color: white;
+}
+
+#mySidenav .notification {
+margin: 10px 10px;
+padding: 2px 3px;
+}
+
+div.dropdown button.dropdown-toggle{
+    border-style: none !important;
+    color:linear-gradient(#56d0df, #999) !important;
+    font-size: 12px;
+    font-weight: normal !important;
+}
+
+.form .form-group{
+    display:flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+#webid{
+    border-left: 2px solid red;
+    padding:10px;
+    background-color: lightgray;
+}
+
+.search-box-container{
+    padding: 10px;
+    margin-top: 20px;
+    /* position: absolute; */
+}
+.search-box-container p{
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+}
+.card{
+    border-radius: 0px !important;
+}
+.dropdown-menu.eng-status{
+    overflow-y: scroll !important;
+    height: 50vh !important;
+    z-index: 400;
+}
+
+.online, .offline{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.online{
+    background-color: green;
+}
+.offline{
+    background-color: #ff0000;
+}
+
+.nav-up-container{
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    left: 78px;
+    width: calc(100% - 78px);
+
+}
+#nav-up-container-nav{
+    display: none;
+}
+.nav-up-container-nav{
+    display: none;
+    position: absolute;
+    left: 0px;
+    /* padding: 0px 10px; */
+}
+.nav-up-container-nav-collapse{
+    left: 172px !important;
+    width: calc(100% - 172px) !important;
+    transition: 0.5s all;
+
+
+    height: auto;
+    /* left: 500px !important;
+    width: calc(100% - 500px) !important;
+    transition: 0.5s all step-end; */
+    /* padding: 0px 10px; */
+}
+
+#row-main{
+    box-sizing: border-box;
+    position: relative;
+    left: 78px;
+    padding: 0px 10px;
+    width: calc(100% - 78px);
+}
+
+.sidebar-expand-width{
+    left: 250px !important;
+    width: calc(100% - 250px) !important;
+}
+.sidebar-collapse-width{
+    width: calc(100% - 78px);
+}
+.date-update-container{
+    /* position: relative;
+    background-color: transparent;
+    top: 0px;
+    left: 0px; */
+    /* z-index: 300; */
+    /* padding: 4px 8px; */
+    /* margin-bottom: 10px; */
+    position: absolute;
+    background-color: transparent;
+    bottom: calc(0% - 6vh) !important;
+    left: calc(50% - 130px);
+    z-index: 300;
+    padding: 4px 8px;
+
+}
+    /* margin-bottom: 10px;
+}
+
+.date-update-container span{
+    padding: 3px 6px;
+}
+
+.nav-up-ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+ */
+#nav-container{
+    position: sticky;
+    z-index: 500;
+    top: -7em;
+}

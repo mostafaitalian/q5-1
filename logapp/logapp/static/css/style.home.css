@@ -1,0 +1,519 @@
+
+@keyframes logo {
+    0% {
+        background-color: white;
+        height: 0px;
+    }
+    10%{
+        
+    }
+    100% {
+        height: 2.5em;
+    }    
+}
+@keyframes glogo {
+    0% {
+        background-color: #fff;
+        height: 0px;
+    }
+    10%{
+        
+    }
+    100% {
+        background-color: var(--BgC);
+        height: 2.5em;
+    }    
+}
+
+.container-fluid.home-outer-cont{
+    position: relative;
+    top: 130px;
+    padding-top: 40px !important;
+
+}
+
+
+.container-fluid{
+    margin: 0px !important;
+    padding: 0px!important;
+}
+
+.container-fluid.fluid-all{
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: rgba(104, 144, 184, 0.04);
+    padding: 80px 0px !important;
+}
+
+.container-fluid.fluid-all-white{
+    margin: 0px !important;
+    padding: 0px !important;
+    /* background-color: rgba(104, 144, 184, 0.04); */
+    padding: 80px 0px !important;
+}
+
+.content-header{
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+
+.content-header-img-cont{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.content-header-heading-cont{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-header-title{
+    font-family: Monda,'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    opacity: 0.90;
+    color: #444444;
+    font-size: 21px;
+}
+
+
+.content-header-body p{
+    font-family: Monda,'Noto Sans KR', sans-serif;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    font-size: 18px;
+    color: #444444;
+    line-height: 1.2;
+
+
+
+
+}
+.content-section-cont{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-section-title{
+    font-family: Monda,'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    opacity: 0.90;
+    color: #000;
+    font-size: 34px;
+}
+
+span.span-underline{
+    text-decoration: underline;
+    color: #444444;
+
+}
+.content-section-body{
+    text-align: center;
+    /* width: 30%; */
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section-body p{
+    font-family: Monda,'Noto Sans KR', sans-serif;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    font-size: 18px;
+    color: #444444;
+    width: 45%;
+    line-height: 1.2;
+    /* text-align: center !important; */
+    vertical-align: middle;
+    letter-spacing: 1.1px;
+
+}
+.content-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sql-btn{
+    background-color: #022EA9 !important;
+    border-radius: 0.225rem !important;
+    padding: 0 1.25rem !important;
+    color: #fff !important;
+    transition: 0.3s all ease-in;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.8;
+
+
+}
+
+.sql-btn:nth-of-type(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sql-btn:hover{
+    background-color: #021d69 !important;
+    color: #fac433 !important;
+
+
+}
+
+.content-diagram-img {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-diagram-img img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.footer-cont{
+    background-color: #fff !important;
+    padding: 30px;
+
+}
+
+
+
+
+.first-footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.first-footer-section .group-f{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.first-footer-section .group-f ul{
+    list-style: none;
+
+}
+
+.group-f-header{
+    text-decoration: none;
+    color: #ababab;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 1.2px;
+}
+
+.group-f ul li a span{
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.group-f ul li,  .group-f-header{
+    font-family: Monda,'Noto Sans KR', sans-serif;
+    font-size: .9em;
+    line-height: 1.6;
+    padding-top: 5px; 
+    letter-spacing: 1.1px;
+    color: #ababab;
+}
+
+.group-f ul li a,  .group-f-header{
+    cursor: pointer;
+}
+
+.group-f ul li a:hover,  .group-f-header:hover{
+    color: #2d6fad;
+    font-weight: 900 !important;
+}
+
+.second-footer-section{
+    height: 2.5em;
+}
+
+.trade-mark{
+    float: left;
+    background-color: transparent;
+    height: 100%;
+    font-size: .9em;
+    line-height: 20px;
+    text-align: center;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    color: #ababab;
+}
+
+.logo-cont{
+    float:right;
+    height: 100%;
+    background-color: transparent;
+    height: 100%;
+    line-height: 20px;
+    font-size: .9em;
+    text-align: center;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    color: #ababab;
+    vertical-align: middle;
+}
+
+.logos-list{
+    display: flex;
+    list-style: none;
+    height: inherit;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
+}
+.logos-list li{
+    display: flex;
+    text-decoration: none;
+    /* vertical-align: middle; */
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    /* transition: 0.3s all linear; */
+    margin-bottom: 0px !important;
+}
+.logos-list li a{
+    width: 25px;
+    height: 25px;
+}
+.logos-list li a i{
+    vertical-align: middle !important;
+
+}
+
+.logos-list li:nth-of-type(1) a i {
+    color: #fac433 !important;
+}
+.logos-list li:nth-of-type(1):hover .fa-brands.fa-github{
+    color: white !important;
+}
+.logos-list li:nth-of-type(1):hover{
+    animation: logo 0.3s normal ;
+
+    background-color: #343a40;
+    color: white;
+}
+
+.logos-list li:nth-of-type(2):hover .fa-brands.fa-youtube{
+    color: white !important;
+}
+
+.logos-list li:nth-of-type(2):hover{
+    animation: logo 0.3s normal ;
+    background-color: #cd201f;
+    color: white;
+}
+
+.logos-list li:nth-of-type(3):hover .fa-brands.fa-linkedin-in{
+    color: white !important;
+}
+.logos-list li:nth-of-type(3):hover{
+    animation: logo 0.3s normal ;
+    background-color: #117eb9;
+    color: white;
+}
+
+.logos-list li:nth-of-type(4):hover .fa-brands.fa-facebook{
+    color: white !important;
+}
+.logos-list li:nth-of-type(4):hover{
+    animation: logo 0.3s normal ;
+
+    background-color: #42599e;
+    color: white;
+}
+
+.logos-list li:nth-of-type(5):hover .fa-brands.fa-blog{
+    color: white !important;
+}
+.logos-list li:nth-of-type(5):hover{
+    animation: logo 0.3s normal ;
+
+    background-color: #00ab6c;
+    color: white;
+}
+.content-section-img-cont{
+    /* background-color: #021d69; */
+    width: 100%;
+    margin: auto;
+}
+
+.wrapper-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.section-cont-inner{
+    flex: 0.3;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+
+}
+.section-cont-inner ul{
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    transform: rotate3d(0,1,0,180deg) scale(1);
+    visibility: hidden;
+    transition: 0.3s all ;
+    padding: 20px;
+
+}
+
+.section-cont-inner:hover {
+    border: 1px solid #021d69;
+}
+
+
+
+@keyframes rotate-vanish-img {
+    0% {
+        transform: rotate3d(0,1,0,0deg) scale(1);
+        visibility: visible;
+    }
+    50%{
+        transform: rotate3d(0,1,0,-90deg) scale(1);
+
+        visibility: hhidden;
+    }
+
+    100% {
+        transform: rotate3d(0,1,0,-180deg) scale(1);
+        visibility: hidden;
+    }
+    0%{
+        
+        transform: rotate3d(0,1,0,-180deg) scale(1);
+        visibility: hidden;
+        
+    }
+}
+@keyframes rotate-show-img {
+        0% {
+            transform: rotate3d(0,1,0,-180deg) scale(1);
+            visibility: hidden;
+        }
+        50%{
+            transform: rotate3d(0,1,0,-90deg) scale(1);
+            visibility: visible;
+        }
+
+        100% {
+            transform: rotate3d(0,1,0,0deg) scale(1);
+            visibility: visible;
+        }
+        0% {
+            transform: rotate3d(0,1,0,0deg) scale(1);
+            visibility: visible;
+        }
+    
+}
+
+
+@keyframes rotate-show-ul {
+    0% {
+        transform: rotate3d(0,1,0,180deg) scale(1);
+        visibility: hidden;
+    }
+    50%{
+        transform: rotate3d(0,1,0,90deg) scale(1);
+
+        visibility: visible;
+    }
+
+    100% {
+        transform: rotate3d(0,1,0,0deg) scale(1);
+        visibility: visible;
+    }
+    0% {
+        transform: rotate3d(0,1,0,0deg) scale(1);
+        visibility: visible;
+    }
+}
+@keyframes rotate-vanish-ul {
+        0% {
+            transform: rotate3d(0,1,0,0deg) scale(1);
+            visibility: visible;
+        }
+        50%{
+            transform: rotate3d(0,1,0,90deg) scale(1);
+            visibility: hidden;
+        }
+
+        100% {
+            transform: rotate3d(0,1,0,180deg) scale(1);
+            visibility: hidden;
+        }
+        0% {
+            transform: rotate3d(0,1,0,180deg) scale(1);
+            visibility: hidden;
+        }
+    
+}
+.rotate-show-ul{
+    animation: rotate-show-ul 0.5s normal !important;
+    /* transform: rotate3d(0,1,0,0deg) scale(1) !important;
+    visibility: visible !important; */
+}
+.show-ul{
+    transform: rotate3d(0,1,0,0deg) scale(1) !important;
+    visibility: visible !important;
+}
+.rotate-vanish-ul{
+    animation: rotate-vanish-ul 0.5s normal !important;
+    /* transform: rotate3d(0,1,0,0deg) scale(1);
+    visibility: hidden; */
+}
+.vanish-ul{
+    transform: rotate3d(0,1,0,0deg) scale(1);
+    visibility: hidden;
+}
+
+.rotate-show-img{
+    animation: rotate-show-img 0.5s normal !important;
+    /* transform: rotate3d(0,1,0,0deg) scale(1) !important;
+    visibility: visible !important; */
+}
+.show-img{
+    transform: rotate3d(0,1,0,0deg) scale(1) !important;
+    visibility: visible !important;
+}
+.rotate-vanish-img{
+    animation: rotate-vanish-img 0.5s normal !important;
+    /* transform: rotate3d(0,1,0,-180deg) scale(1) !important;
+    visibility: hidden !important; */
+}
+.vanish-img{
+    transform: rotate3d(0,1,0,-180deg) scale(1) !important;
+    visibility: hidden !important;
+}
+/* .cl-ib-image{
+    transition: 0.3s all ;
+}    
+     */
+.section-cont-inner .cl-ib-image img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
